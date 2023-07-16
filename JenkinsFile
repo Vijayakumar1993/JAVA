@@ -3,9 +3,9 @@ node {
         echo 'gradle -v'
     }
     stage('clean'){
-        gradlew("clean")
-    }
+        gradle clean
+}
     stage('Build') {
-        gradlew("build")
+        gradle build
     }
 }
