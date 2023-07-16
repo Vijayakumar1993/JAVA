@@ -1,0 +1,12 @@
+node {
+   
+    stage('Preparation') { // for display purposes
+        echo "Preparation is executing"
+    }
+    stage('Build') {
+       echo "Build is executing"
+    }
+    stage('Results') {
+      echo "Result is executing"
+    }
+}
