@@ -2,6 +2,9 @@ node {
     stage('Preparation') { // for display purposes
         echo 'gradle -v'
     }
+    stage('clean'){
+        gradlew("clean")
+    }
     stage('Build') {
         gradlew("build")
     }
