@@ -1,12 +1,8 @@
-node {
-   
+node {  
     stage('Preparation') { // for display purposes
-        echo "Preparation is executing"
+        echo 'gradle -v'
     }
     stage('Build') {
-       echo "Build is executing"
-    }
-    stage('Results') {
-      echo "Result is executing"
+        gradlew("build")
     }
 }
